@@ -6,4 +6,4 @@ kubectl delete secret argocd-secret -n devtroncd --ignore-not-found
 kubectl apply -f argocd-secret.yaml
 kubectl delete pods -n devtroncd -l app.kubernetes.io/name=argocd-server
 sleep 30
-kubectl get delete -n devtroncd -l component=devtron
+kubectl delete pods -n devtroncd -l component=devtron
